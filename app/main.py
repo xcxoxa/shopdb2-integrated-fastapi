@@ -4,12 +4,15 @@ from sqlalchemy.exc import SQLAlchemyError
 
 from app.database import engine
 
-# 조원 1 라우터
+# 조원 1 기존 라우터
 from app.routers.users import router as users_router
 from app.routers.addresses import router as addresses_router
 from app.routers.orders import router as orders_router
 from app.routers.inquiries import router as inquiries_router
 from app.routers.inquiry_files import router as inquiry_files_router
+
+# 조원 1 추가 기능 라우터
+from app.routers.member1_auth import router as member1_auth_router
 
 # 조원 2 라우터
 from app.routers.categories import router as categories_router
@@ -30,17 +33,23 @@ from app.routers.refunds import admin_router as admin_refunds_router
 
 app = FastAPI(
     title="SHOPDB2 통합 API",
-    description="조원 1·2·3 쇼핑몰 데이터베이스 통합 API",
-    version="1.0.0",
+    description=(
+        "조원 1·2·3 쇼핑몰 데이터베이스 통합 API "
+        "및 메뉴·권한·로그인·접속 관리 기능"
+    ),
+    version="1.1.0",
 )
 
 
-# 조원 1 API 연결
+# 조원 1 기존 API 연결
 app.include_router(users_router)
 app.include_router(addresses_router)
 app.include_router(orders_router)
 app.include_router(inquiries_router)
 app.include_router(inquiry_files_router)
+
+# 조원 1 추가 API 연결
+app.include_router(member1_auth_router)
 
 # 조원 2 API 연결
 app.include_router(categories_router)
@@ -58,14 +67,16 @@ app.include_router(refunds_router)
 app.include_router(admin_refunds_router)
 
 
-@app.get("/")
+@app.get("/", tags=["서버 상태"])
 def root() -> dict[str, str]:
     return {
-        "message": "SHOPDB2 조원 1·2·3 통합 FastAPI 서버가 실행 중입니다."
+        "message": (
+            "SHOPDB2 조원 1·2·3 통합 FastAPI 서버가 실행 중입니다."
+        )
     }
 
 
-@app.get("/health/db")
+@app.get("/health/db", tags=["서버 상태"])
 def database_health() -> dict[str, str]:
     try:
         with engine.connect() as connection:
