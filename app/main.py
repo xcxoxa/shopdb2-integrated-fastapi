@@ -17,13 +17,20 @@ from app.routers.sellers import router as sellers_router
 from app.routers.products import router as products_router
 from app.routers.inventories import router as inventories_router
 
-# 조원 3 라우터
+# 조원 3 기존 라우터
 from app.routers.org_units import router as org_units_router
 from app.routers.payments import router as payments_router
 from app.routers.policies import router as policies_router
 from app.routers.rag import router as rag_router
 from app.routers.refunds import router as refunds_router
 from app.routers.refunds import admin_router as admin_refunds_router
+
+# 조원 3 운영관리 라우터
+from app.routers.audit_logs import router as audit_logs_router
+from app.routers.error_logs import router as error_logs_router
+from app.routers.admin_approval_requests import router as admin_approval_requests_router
+from app.routers.user_notifications import router as user_notifications_router
+from app.routers.maintenance_notices import router as maintenance_notices_router
 
 
 app = FastAPI(
@@ -46,13 +53,20 @@ app.include_router(sellers_router)
 app.include_router(products_router)
 app.include_router(inventories_router)
 
-# 조원 3 API 연결
+# 조원 3 기존 API 연결
 app.include_router(org_units_router)
 app.include_router(payments_router)
 app.include_router(policies_router)
 app.include_router(rag_router)
 app.include_router(refunds_router)
 app.include_router(admin_refunds_router)
+
+# 조원 3 운영관리 API 연결
+app.include_router(audit_logs_router)
+app.include_router(error_logs_router)
+app.include_router(admin_approval_requests_router)
+app.include_router(user_notifications_router)
+app.include_router(maintenance_notices_router)
 
 
 @app.get("/")
