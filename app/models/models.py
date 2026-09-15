@@ -1,3 +1,20 @@
+from datetime import datetime
+
+from sqlalchemy import (
+    BigInteger,
+    Boolean,
+    CHAR,
+    Column,
+    DateTime,
+    Enum,
+    ForeignKey,
+    Integer,
+    String,
+    Text,
+)
+from sqlalchemy.orm import relationship
+
+from app.database import Base
 # ==========================================
 # [확장 프로젝트] 조원 2 담당: 버전·배포·백업·롤백
 # ==========================================
