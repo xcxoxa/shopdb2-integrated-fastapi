@@ -16,6 +16,8 @@ from app.routers.categories import router as categories_router
 from app.routers.sellers import router as sellers_router
 from app.routers.products import router as products_router
 from app.routers.inventories import router as inventories_router
+from app.routers.deployments import router as deployments_router
+
 
 # 조원 3 라우터
 from app.routers.org_units import router as org_units_router
@@ -45,6 +47,7 @@ app.include_router(categories_router)
 app.include_router(sellers_router)
 app.include_router(products_router)
 app.include_router(inventories_router)
+app.include_router(deployments_router)
 
 # 조원 3 API 연결
 app.include_router(org_units_router)

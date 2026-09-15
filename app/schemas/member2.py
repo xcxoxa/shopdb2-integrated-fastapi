@@ -150,3 +150,87 @@ class ProductDetailResponse(BaseModel):
 
     class Config:
         from_attributes = True
+
+        # ==========================================
+# [확장 프로젝트] 조원 2 담당: 버전·배포·백업·롤백 스키마
+# ==========================================
+
+# 1. 앱 버전 관리 스키마
+class ApplicationVersionResponse(BaseModel):
+    version_id: int
+    version_name: str
+    git_commit_hash: str
+    release_notes: Optional[str] = None
+    version_status: str
+    created_by_user_id: int
+    created_at: datetime
+
+    class Config:
+        from_attributes = True
+
+# 2. 배포 이력 스키마
+class DeploymentHistoryResponse(BaseModel):
+    deployment_id: int
+    version_id: int
+    environment_type: str
+    deployment_status: str
+    deployed_by_user_id: int
+    started_at: Optional[datetime] = None
+    completed_at: Optional[datetime] = None
+    deployment_message: Optional[str] = None
+    created_at: datetime
+
+    class Config:
+        from_attributes = True
+
+# 3. DB 백업 이력 스키마
+class DatabaseBackupHistoryResponse(BaseModel):
+    backup_id: int
+    version_id: Optional[int] = None
+    backup_name: str
+    backup_type: str
+    storage_path: str
+    checksum_sha256: Optional[str] = None
+    file_size_bytes: Optional[int] = None
+    backup_status: str
+    created_by_user_id: int
+    created_at: datetime
+    completed_at: Optional[datetime] = None
+
+    class Config:
+        from_attributes = True
+
+# 4. 롤백 이력 스키마
+class RollbackHistoryResponse(BaseModel):
+    rollback_id: int
+    from_version_id: int
+    to_version_id: int
+    deployment_id: Optional[int] = None
+    backup_id: Optional[int] = None
+    rollback_reason: str
+    rollback_status: str
+    requested_by_user_id: int
+    approved_by_user_id: Optional[int] = None
+    started_at: Optional[datetime] = None
+    completed_at: Optional[datetime] = None
+    created_at: datetime
+
+    class Config:
+        from_attributes = True
+
+# 5. 피처 플래그(기능 제어) 스키마
+class FeatureFlagResponse(BaseModel):
+    feature_flag_id: int
+    flag_code: str
+    flag_name: str
+    description: Optional[str] = None
+    enabled_yn: str
+    target_role_code: Optional[str] = None
+    start_at: Optional[datetime] = None
+    end_at: Optional[datetime] = None
+    updated_by_user_id: int
+    created_at: datetime
+    updated_at: datetime
+
+    class Config:
+        from_attributes = True
