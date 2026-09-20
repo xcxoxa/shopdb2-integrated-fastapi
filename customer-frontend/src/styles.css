@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&family=Montserrat:wght@500;600;700;800;900&display=swap");
+:root{font-family:"Noto Sans KR",sans-serif;color:#161616;background:#fff;font-synthesis:none}*{box-sizing:border-box}body{margin:0;min-width:320px}button,input,select{font:inherit}button{border:0;cursor:pointer}.announcement{padding:10px;background:#111;color:#fff;text-align:center;font-size:12px}.header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid #ddd}.header-row{display:grid;grid-template-columns:230px minmax(260px,650px) 280px;align-items:center;gap:35px;width:min(1400px,calc(100% - 48px));height:92px;margin:auto}.logo{display:flex;flex-direction:column;padding:0;background:none;text-align:left;font:900 28px Montserrat;letter-spacing:1px}.logo span{margin-top:3px;font:600 9px Montserrat;letter-spacing:2.5px;color:#888}.search{display:flex;height:48px;border-bottom:2px solid #111}.search input{flex:1;border:0;padding:0 12px;outline:0}.search button{width:100px;color:#fff;background:#111;font:700 11px Montserrat}.utilities{display:flex;justify-content:flex-end;gap:22px}.utilities button{position:relative;padding:8px 0;background:none;font:600 10px Montserrat}.utilities b{display:inline-grid;min-width:17px;height:17px;margin-left:3px;place-items:center;color:#fff;background:#111;border-radius:50%;font-size:9px}.header nav{display:flex;justify-content:center;gap:38px;height:48px;border-top:1px solid #eee}.header nav button{background:none;font:700 11px Montserrat}.header nav button:hover{border-bottom:3px solid #111}.hero{position:relative;height:min(690px,70vw);min-height:520px;overflow:hidden;background:#ddd}.hero>img{width:100%;height:100%;object-fit:cover;filter:brightness(.72)}.hero-copy{position:absolute;top:50%;left:max(40px,calc((100vw - 1400px)/2));color:#fff;transform:translateY(-50%)}.hero-copy p{font:700 12px Montserrat;letter-spacing:3px}.hero-copy h1{margin:15px 0;font:800 clamp(48px,7vw,102px)/.93 Montserrat;letter-spacing:-5px}.hero-copy span{font:600 12px Montserrat;letter-spacing:3px}.hero-copy button,.brand-banner button{display:block;margin-top:30px;padding:15px 25px;color:#111;background:#fff;font:800 11px Montserrat}.category-strip{display:grid;grid-template-columns:repeat(4,1fr);width:min(1400px,calc(100% - 48px));margin:0 auto;border:1px solid #ddd;border-top:0}.category-strip button{display:flex;min-height:150px;flex-direction:column;align-items:flex-start;justify-content:center;padding:25px 32px;background:#fff;border-right:1px solid #ddd;text-align:left}.category-strip button:last-child{border-right:0}.category-strip span{font:600 10px Montserrat;color:#999}.category-strip strong{margin:8px 0;font:800 21px Montserrat}.category-strip small{color:#777}.product-section,.content-page{width:min(1400px,calc(100% - 48px));margin:auto;padding:90px 0}.section-head,.page-title{text-align:center;margin-bottom:42px}.section-head p,.page-title p{margin:0;font:700 10px Montserrat;letter-spacing:3px}.section-head h2,.page-title h1{margin:10px 0;font:800 36px Montserrat;letter-spacing:-1px}.section-head span{color:#777;font-size:13px}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.product{overflow:hidden;background:#fff;border:1px solid #e2e2e2}.photo{position:relative;height:520px;overflow:hidden;background:#eee}.photo img{width:100%;height:100%;object-fit:cover;transition:.4s}.product:hover .photo img{transform:scale(1.035)}.photo>button{position:absolute;top:16px;right:16px;display:grid;width:40px;height:40px;place-items:center;background:rgba(255,255,255,.9);border-radius:50%;font-size:21px}.photo>button.liked{color:#d62929}.photo>b{position:absolute;bottom:15px;left:15px;padding:7px 10px;color:#fff;background:#111;font:700 9px Montserrat;letter-spacing:1px}.product-info{padding:22px}.product-info small{color:#888}.name{display:block;width:100%;margin:8px 0 18px;padding:0;background:none;text-align:left;font-size:17px;font-weight:700}.product-info del{color:#aaa;font-size:12px}.product-info p{display:flex;gap:8px;margin:4px 0}.product-info em{color:#d62929;font-style:normal;font-weight:800}.product-info strong{font-size:18px}.product-info>span{display:block;margin:12px 0;color:#555;font-size:11px}.add{width:100%;padding:13px;background:#111;color:#fff;font:700 10px Montserrat;letter-spacing:1px}.brand-banner{position:relative;width:min(1400px,calc(100% - 48px));height:570px;margin:0 auto 100px;overflow:hidden;background:#111}.brand-banner img{width:100%;height:100%;object-fit:cover;filter:brightness(.6)}.brand-banner div{position:absolute;left:60px;bottom:55px;color:#fff}.brand-banner p{font:700 11px Montserrat;letter-spacing:3px}.brand-banner h2{margin:10px 0;font-size:36px}.shop-layout{display:grid;grid-template-columns:190px 1fr;gap:40px}.shop-layout>aside{display:flex;flex-direction:column;align-items:flex-start}.shop-layout>aside h3{font:800 13px Montserrat;letter-spacing:1px}.shop-layout>aside button{width:100%;padding:11px 0;background:none;color:#777;text-align:left}.shop-layout>aside button.selected{color:#111;font-weight:800}.result-line{display:flex;justify-content:space-between;margin-bottom:20px;color:#777;font-size:13px}.result-line button{background:none;text-decoration:underline}.cart-layout{display:grid;grid-template-columns:1fr 340px;gap:35px}.cart-list{border-top:2px solid #111}.cart-list article{display:grid;grid-template-columns:110px 1fr auto 140px;align-items:center;gap:20px;padding:20px 0;border-bottom:1px solid #ddd}.cart-list img{width:110px;height:135px;object-fit:cover}.cart-list h3{margin:5px 0}.quantity{display:flex;border:1px solid #ddd}.quantity button,.quantity span{display:grid;width:34px;height:34px;place-items:center;background:#fff}.summary{height:fit-content;padding:28px;background:#f5f5f5}.summary h2{font:800 17px Montserrat}.summary p{display:flex;justify-content:space-between}.summary .total b{font-size:21px}.summary>button{width:100%;margin-top:15px;padding:15px;color:#fff;background:#111;font-weight:800}.login-page{display:grid;min-height:650px;place-items:center;background:#f5f5f5}.login-page form{width:min(430px,calc(100% - 30px));padding:45px;background:#fff;text-align:center}.login-page h1{font:900 35px Montserrat}.login-page form>p{color:#777}.login-page input{width:100%;height:48px;margin-top:12px;padding:0 13px;border:1px solid #ccc}.login-page form>button{width:100%;margin-top:18px;padding:14px;color:#fff;background:#111;font:800 11px Montserrat}.login-page form>div{display:flex;justify-content:center;gap:15px;margin-top:20px}.login-page a{color:#777;font-size:11px;text-decoration:none}.notices{border-top:2px solid #111}.notices article{display:grid;grid-template-columns:70px 1fr auto;padding:21px;border-bottom:1px solid #ddd}.notices b{font-size:12px}.notices time{color:#999;font-size:12px}.modal-bg{position:fixed;z-index:100;inset:0;display:grid;padding:25px;place-items:center;background:rgba(0,0,0,.7)}.modal{position:relative;display:grid;grid-template-columns:1.05fr .95fr;width:min(940px,100%);max-height:90vh;overflow:auto;background:#fff}.modal>img{width:100%;height:100%;min-height:600px;object-fit:cover}.close{position:absolute;top:15px;right:15px;z-index:2;width:40px;height:40px;background:#fff;border-radius:50%;font-size:25px}.modal-info{display:flex;flex-direction:column;justify-content:center;padding:48px}.modal-info h2{margin:7px 0 12px;font-size:30px}.modal-info>p{color:#666;line-height:1.7}.modal-info del{color:#aaa}.modal-info>strong{margin:5px 0 20px;font-size:27px}.modal-info label{margin-top:12px;font-size:12px;font-weight:700}.modal-info select{width:100%;height:45px;margin-top:7px;padding:0 10px;background:#fff;border:1px solid #ccc}.modal-info .stock{font-size:12px}.modal-actions{display:grid;grid-template-columns:1fr 1.5fr;gap:8px;margin-top:12px}.modal-actions button{padding:14px;border:1px solid #111;background:#fff;font:700 10px Montserrat}.modal-actions button:last-child{color:#fff;background:#111}.empty{padding:100px;background:#f6f6f6;text-align:center}.empty span{font:800 12px Montserrat;letter-spacing:3px}.empty button{padding:13px 20px;color:#fff;background:#111}footer{display:grid;grid-template-columns:2fr 1fr 1.5fr;gap:35px;padding:55px max(30px,calc((100vw - 1400px)/2));color:#bbb;background:#111}footer h2{margin:0;color:#fff;font:900 27px Montserrat}footer b{color:#fff;font:700 10px Montserrat;letter-spacing:1px}footer p{font-size:12px}footer>small{grid-column:1/-1;padding-top:25px;border-top:1px solid #333;color:#666}
+/* 주문서 · 주문완료 */
+.checkout-layout{display:grid;grid-template-columns:1fr 380px;gap:45px}.delivery-form{padding:35px;border-top:2px solid #111;background:#fff}.delivery-form h2{margin:0 0 22px;font-size:20px}.delivery-form h2:not(:first-child){margin-top:42px}.delivery-form>label,.address-row label{display:grid;gap:8px;margin-bottom:18px;color:#333;font-size:13px;font-weight:700}.delivery-form input{width:100%;height:48px;padding:0 13px;border:1px solid #ccc}.address-row{display:grid;grid-template-columns:150px 1fr;gap:12px}.payment-options{display:flex;gap:22px;padding:20px;background:#f5f5f5}.payment-options label{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:700}.payment-options input{width:16px;height:16px}.demo-payment{color:#777;font-size:12px}.order-complete{width:min(680px,calc(100% - 30px));margin:90px auto;padding:70px;border:1px solid #ddd;text-align:center}.order-complete>span{font:800 11px Montserrat;letter-spacing:3px}.order-complete h1{margin:15px 0 35px;font-size:36px}.order-complete>p{margin:0;color:#777;font-size:13px}.order-complete>strong{display:block;margin:8px 0 35px;font:800 24px Montserrat}.order-complete dl{border-top:2px solid #111}.order-complete dl div{display:flex;justify-content:space-between;padding:16px 8px;border-bottom:1px solid #ddd}.order-complete dt{font-weight:700}.order-complete dd{margin:0}.order-complete>button{margin-top:30px;padding:15px 28px;background:#111;color:#fff;font-weight:800}
+/* 회원가입 · 로그인 · 마이페이지 */
+.login-page form>div button{padding:0;background:transparent;color:#777;font-size:11px}.login-page form>div span{color:#888;font-size:12px}.signup-page{padding:70px 20px}.signup-page form{width:min(520px,calc(100% - 30px))}.signup-page form>label:not(.terms){display:grid;gap:8px;margin-top:14px;color:#333;font-size:13px;font-weight:700;text-align:left}.signup-page form>label:not(.terms) input{margin-top:0}.signup-page .terms{display:flex;align-items:center;gap:9px;margin-top:18px;color:#555;font-size:13px;text-align:left}.signup-page .terms input{width:16px;height:16px;margin:0}.member-card{max-width:760px;margin:20px auto 100px;padding:54px;border:1px solid #ddd;background:#fff}.member-card>p{margin:0 0 12px;font:800 11px Montserrat;letter-spacing:2px}.member-card h2{margin:0 0 38px;font-size:30px}.member-card dl{border-top:2px solid #111}.member-card dl div{display:grid;grid-template-columns:140px 1fr;padding:18px 12px;border-bottom:1px solid #e5e5e5}.member-card dt{font-weight:700}.member-card dd{margin:0;color:#555}.member-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:30px}.member-actions button{min-height:48px;border:1px solid #111;background:#fff;font-weight:700}.member-actions button:first-child{background:#111;color:#fff}
+@media(max-width:1000px){.header-row{grid-template-columns:180px 1fr}.utilities{display:none}.product-grid{grid-template-columns:repeat(2,1fr)}.photo{height:440px}.category-strip{grid-template-columns:repeat(2,1fr)}.cart-layout,.checkout-layout{grid-template-columns:1fr}.modal{grid-template-columns:1fr}.modal>img{min-height:420px;max-height:520px}}
+@media(max-width:650px){.header-row{display:flex;height:auto;flex-direction:column;gap:15px;padding:18px 0}.logo{align-self:flex-start}.search{width:100%}.header nav{justify-content:flex-start;gap:25px;padding:0 18px;overflow-x:auto}.header nav button{flex-shrink:0}.hero{height:600px}.hero-copy{left:25px}.hero-copy h1{font-size:54px;letter-spacing:-3px}.category-strip,.product-grid{grid-template-columns:1fr}.photo{height:500px}.product-section,.content-page{width:calc(100% - 30px);padding:60px 0}.shop-layout{grid-template-columns:1fr}.shop-layout>aside{flex-direction:row;overflow-x:auto}.shop-layout>aside h3{display:none}.shop-layout>aside button{width:auto;padding:10px 15px;white-space:nowrap}.cart-list article{grid-template-columns:80px 1fr}.cart-list img{width:80px;height:100px}.cart-list .quantity,.cart-list article>b{grid-column:2}.modal-info{padding:30px}.brand-banner{width:calc(100% - 30px);height:480px}.brand-banner div{left:25px;bottom:30px}footer{grid-template-columns:1fr}.announcement{font-size:10px}.member-card{padding:28px 20px}.member-card dl div{grid-template-columns:90px 1fr}.member-actions{grid-template-columns:1fr}.address-row{grid-template-columns:1fr}.payment-options{align-items:flex-start;flex-direction:column}.order-complete{padding:45px 22px}.order-complete h1{font-size:28px}}
+
+/* 상품 후기 · 별점 */
+.review-modal{width:min(1040px,100%)}
+.review-modal>.modal-info{justify-content:flex-start;overflow-y:auto}
+.review-section{margin-top:30px;padding-top:24px;border-top:2px solid #111}
+.review-title{display:flex;align-items:center;justify-content:space-between}
+.review-title h3{margin:0;font:800 17px Montserrat}
+.review-title span{color:#777;font-size:12px}
+.review-form{display:grid;grid-template-columns:145px 1fr 90px;gap:8px;margin-top:15px}
+.review-form select,.review-form textarea{margin:0;padding:11px;border:1px solid #ccc;background:#fff}
+.review-form textarea{min-height:72px;resize:vertical}
+.review-form button,.review-login{padding:12px;color:#fff;background:#111;font-size:12px;font-weight:800}
+.review-login{width:100%;margin-top:15px}
+.review-list{margin-top:18px}
+.review-list article{position:relative;padding:17px 0;border-top:1px solid #ddd}
+.review-list article>div{display:flex;justify-content:space-between;gap:15px}
+.review-list strong{color:#111;letter-spacing:2px}
+.review-list strong i{color:#ddd;font-style:normal}
+.review-list span{color:#888;font-size:11px}
+.review-list article p{margin:10px 40px 0 0;color:#444;font-size:13px}
+.review-list article>button{position:absolute;right:0;bottom:17px;background:none;color:#999;font-size:11px;text-decoration:underline}
+.no-review{padding:25px 0;text-align:center;color:#888;font-size:12px}
+@media(max-width:650px){.review-form{grid-template-columns:1fr}.review-list article>div{align-items:flex-start;flex-direction:column;gap:5px}}
+
+/* 상품 Q&A */
+.qna-page{max-width:920px;margin:0 auto}
+.qna-product{display:grid;grid-template-columns:150px 1fr;gap:24px;align-items:center;padding:20px;border:1px solid #ddd}
+.qna-product img{width:150px;height:170px;object-fit:cover}
+.qna-product h2{margin:6px 0 12px}
+.qna-product strong{display:block;font-size:20px}
+.qna-product button{margin-top:14px;padding:9px 14px;border:1px solid #111;background:#fff;font-size:11px;font-weight:700}
+.qna-form{display:grid;grid-template-columns:140px 1fr 100px;gap:10px;margin-top:30px;padding:24px;background:#f5f5f5}
+.qna-form select,.qna-form textarea{padding:12px;border:1px solid #ccc;background:#fff}
+.qna-form textarea{min-height:90px;resize:vertical}
+.qna-form button{color:#fff;background:#111;font-weight:800}
+.qna-list{margin-top:30px;border-top:2px solid #111}
+.qna-list article{position:relative;padding:22px 10px;border-bottom:1px solid #ddd}
+.qna-head{display:flex;align-items:center;gap:12px}
+.qna-head b{padding:5px 8px;background:#eee;font-size:11px}
+.qna-head strong{color:#777;font-size:12px}
+.qna-head span{margin-left:auto;color:#999;font-size:11px}
+.qna-list article>p{margin:15px 45px 0 0}
+.qna-list article>button{position:absolute;right:10px;bottom:22px;background:none;color:#999;font-size:11px;text-decoration:underline}
+@media(max-width:650px){.qna-product{grid-template-columns:95px 1fr}.qna-product img{width:95px;height:120px}.qna-form{grid-template-columns:1fr}.qna-form button{padding:13px}.qna-head{align-items:flex-start;flex-wrap:wrap}.qna-head span{width:100%;margin-left:0}}
+
+/* 최근 본 상품 */
+.recent-toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;padding-bottom:15px;border-bottom:1px solid #ddd;color:#777;font-size:13px}
+.recent-toolbar button{padding:8px 13px;border:1px solid #bbb;background:#fff;font-size:11px}
+
+/* 배송지 관리 */
+.address-book{display:grid;grid-template-columns:1fr 1.2fr;gap:36px;align-items:start}
+.address-form{padding:30px;border:1px solid #ddd;background:#f8f8f8}
+.address-form h2,.address-list h2{margin:0 0 24px;font-size:20px}
+.address-form>label,.address-form>div>label{display:grid;gap:7px;margin-bottom:15px;font-size:12px;font-weight:700}
+.address-form>div{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.address-form input{width:100%;height:45px;padding:0 12px;border:1px solid #ccc;background:#fff}
+.address-form .default-check{display:flex;align-items:center;gap:8px;font-weight:500}
+.address-form .default-check input{width:16px;height:16px}
+.address-form>button{width:100%;padding:14px;color:#fff;background:#111;font-weight:800}
+.address-list{border-top:2px solid #111;padding-top:24px}
+.address-list article{display:flex;justify-content:space-between;gap:20px;padding:22px 5px;border-bottom:1px solid #ddd}
+.address-list h3{margin:0 0 10px}.address-list h3 b{margin-left:10px;padding:5px 8px;color:#fff;background:#111;font-size:10px}
+.address-list p{margin:5px 0;color:#666;font-size:13px}
+.address-list article>div:last-child{display:flex;align-items:flex-start;gap:7px}
+.address-list article button{padding:8px 10px;border:1px solid #bbb;background:#fff;font-size:11px;white-space:nowrap}
+.address-list article button:disabled{color:#aaa;background:#eee;cursor:default}
+@media(max-width:850px){.address-book{grid-template-columns:1fr}}
+@media(max-width:650px){.address-form>div{grid-template-columns:1fr}.address-list article{flex-direction:column}}
+
+/* 결제내역 · 영수증 */
+.payment-history{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:1050px;margin:0 auto}
+.payment-history article{padding:28px;border:1px solid #ddd;background:#fff}
+.payment-head{display:flex;justify-content:space-between;gap:20px;padding-bottom:18px;border-bottom:2px solid #111}
+.payment-head time{display:block;margin-bottom:6px;color:#888;font-size:11px}
+.payment-head strong{font:700 13px Montserrat}
+.payment-status{align-self:flex-start;padding:7px 10px;background:#eee;font-size:11px;font-weight:800}
+.payment-done{color:#fff;background:#111}.payment-cancelled,.payment-failed{color:#a22;background:#fee}
+.payment-history dl{margin:14px 0}
+.payment-history dl div{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #eee}
+.payment-history dt{color:#777;font-size:12px}.payment-history dd{margin:0;font-size:13px;font-weight:700}
+.payment-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}
+.payment-actions button{padding:10px 15px;border:1px solid #111;background:#fff;font-size:11px;font-weight:800}
+.payment-actions button:last-child{color:#fff;background:#111}.payment-actions button:disabled{border-color:#ccc;color:#aaa;background:#eee;cursor:default}
+@media(max-width:760px){.payment-history{grid-template-columns:1fr}.payment-head{align-items:flex-start;flex-direction:column}}
+
+/* 클릭형 공지사항 */
+.notices article{display:block;padding:0}
+.notice-row{display:grid;width:100%;grid-template-columns:70px 1fr auto;padding:21px;background:#fff;text-align:left}
+.notice-row:hover{background:#f7f7f7}
+.notice-open .notice-row{font-weight:700;background:#fafafa}
+.notice-detail{padding:28px 90px;background:#f7f7f7}
+.notice-detail h2{margin:0 0 14px;font-size:19px}
+.notice-detail p{margin:0;color:#555;line-height:1.8}
+.notice-detail button{display:block;margin:22px 0 0 auto;padding:8px 18px;border:1px solid #111;background:#fff;font-size:11px;font-weight:700}
+@media(max-width:650px){.notice-row{grid-template-columns:55px 1fr}.notice-row time{grid-column:2;margin-top:8px}.notice-detail{padding:22px}}

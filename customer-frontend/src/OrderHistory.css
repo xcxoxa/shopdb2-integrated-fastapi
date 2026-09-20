@@ -1,0 +1,149 @@
+.order-history {
+  display: grid;
+  gap: 18px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.order-history article {
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.order-head,
+.order-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+}
+
+.order-head {
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+}
+
+.order-head div {
+  display: grid;
+  gap: 5px;
+}
+
+.order-head time,
+.order-body small {
+  color: #777;
+  font-size: 12px;
+}
+
+.order-head strong {
+  font: 800 14px Montserrat, sans-serif;
+}
+
+.order-body {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.order-body p {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.order-body > strong {
+  font-size: 21px;
+}
+
+.status {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #eee;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.status-payment_pending { background: #fff1cc; color: #8a5a00; }
+.status-paid,
+.status-preparing { background: #e8f0ff; color: #235bb2; }
+.status-shipping { background: #e9e4ff; color: #5936bd; }
+.status-delivered,
+.status-completed { background: #dcf7e9; color: #087447; }
+.status-cancelled,
+.status-refunded { background: #f1f1f1; color: #666; }
+
+.delivery-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #eee;
+}
+
+.delivery-steps span {
+  padding: 16px;
+  text-align: center;
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.delivery-steps span:not(:last-child) {
+  border-right: 1px solid #eee;
+}
+
+.delivery-steps span.active {
+  background: #111;
+  color: #fff;
+}
+
+.member-actions {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cart-option {
+  margin: 7px 0;
+  color: #777;
+  font-size: 12px;
+}
+
+.order-price-actions {
+  display: grid;
+  justify-items: end;
+  gap: 12px;
+}
+
+.order-price-actions button {
+  padding: 9px 14px;
+  border: 1px solid #d33;
+  background: #fff;
+  color: #d33;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.refund-state {
+  display: block;
+  margin-top: 10px;
+  color: #b56b00;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.modal-actions {
+  grid-template-columns: 1fr 1fr 1.5fr;
+}
+
+@media (max-width: 650px) {
+  .member-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .order-head,
+  .order-body {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .delivery-steps span {
+    padding: 12px 4px;
+    font-size: 10px;
+  }
+}
