@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap');
+
+:root { font-family: 'Noto Sans KR', sans-serif; color: #171714; background: #f5f2eb; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(circle at 8% 10%, #f4e7d5 0, transparent 31%), radial-gradient(circle at 91% 14%, #e2edf1 0, transparent 34%), #f7f6f2; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+.portal { width: min(1180px, calc(100% - 40px)); min-height: 760px; margin: 52px auto; display: grid; grid-template-columns: 1.35fr .9fr; background: rgba(255,255,255,.91); border: 1px solid rgba(30,30,26,.08); border-radius: 30px; box-shadow: 0 24px 70px rgba(31,40,42,.13); overflow: hidden; }
+.intro-panel { padding: 48px 48px 38px; position: relative; }
+.brand { display: flex; align-items: center; gap: 12px; margin-bottom: 58px; }
+.brand > span { display: grid; place-items: center; width: 48px; height: 48px; border: 2px solid #171714; border-radius: 50%; font-weight: 900; font-size: 20px; }
+.brand strong { display: block; font-size: 23px; letter-spacing: 3px; }
+.brand small { display: block; color: #8d7552; font-size: 10px; letter-spacing: 1.8px; margin-top: 2px; }
+.eyebrow, .login-heading > span { color: #987143; font-weight: 800; font-size: 11px; letter-spacing: 2px; }
+h1 { margin: 13px 0 18px; font-size: clamp(38px, 4.5vw, 62px); line-height: 1.13; letter-spacing: -3.2px; }
+.lead { max-width: 620px; margin: 0; color: #66645d; font-size: 15px; line-height: 1.75; }
+.role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 34px; }
+.role-card { min-height: 190px; padding: 22px 17px 17px; display: flex; flex-direction: column; border: 1px solid #ddd8cf; border-top: 3px solid #987143; border-radius: 17px; background: #fff; }
+.role-card.branch { border-top-color: #1b6b65; }
+.role-card.customer { border-top-color: #232323; }
+.role-label { font-weight: 800; font-size: 14px; }
+.role-card p { color: #77736a; font-size: 12px; line-height: 1.65; flex: 1; }
+.role-card button { width: 100%; padding: 11px 8px; border: 1px solid #cbb897; border-radius: 9px; background: #fbf7f0; color: #70522d; font-weight: 700; font-size: 12px; }
+.role-card.branch button { border-color: #9bbeba; color: #145c56; background: #f0f8f6; }
+.role-card.customer button { border-color: #bdbdb8; color: #222; background: #f6f6f4; }
+.security-info { display: flex; gap: 11px; align-items: center; margin-top: 28px; padding-top: 22px; border-top: 1px solid #ebe7df; }
+.security-info > span { width: 9px; height: 9px; border-radius: 50%; background: #e3a523; box-shadow: 0 0 0 5px #fff3d5; }
+.security-info > span.online { background: #1a9b71; box-shadow: 0 0 0 5px #e0f6ee; }
+.security-info b, .security-info small { display: block; }
+.security-info b { font-size: 13px; }
+.security-info small { color: #8b8880; margin-top: 3px; font-size: 11px; }
+.login-panel { padding: 64px 46px; background: #181816; color: #fff; display: flex; flex-direction: column; justify-content: center; }
+.login-heading h2 { margin: 12px 0 13px; font-size: 35px; letter-spacing: -1.8px; }
+.login-heading p { color: #aaa79e; line-height: 1.7; font-size: 13px; margin: 0 0 35px; }
+form { display: grid; gap: 21px; }
+label { font-size: 13px; font-weight: 700; color: #e8e5dc; }
+input { width: 100%; height: 52px; margin-top: 9px; padding: 0 15px; border: 1px solid #44433f; border-radius: 10px; outline: none; color: #fff; background: #272724; }
+input:focus { border-color: #b58a52; box-shadow: 0 0 0 3px rgba(181,138,82,.15); }
+.password-field { position: relative; }
+.password-field input { padding-right: 65px; }
+.password-field button { position: absolute; right: 7px; bottom: 7px; height: 38px; padding: 0 11px; border: 0; color: #c5b18f; background: transparent; font-size: 11px; font-weight: 700; }
+.login-button { height: 54px; margin-top: 7px; border: 0; border-radius: 10px; color: #171714; background: #e9dfcd; font-weight: 900; }
+.login-button:hover { background: #fff; }
+.login-button:disabled { opacity: .65; cursor: wait; }
+.error { margin: -5px 0 0; padding: 11px 13px; border: 1px solid #754b43; border-radius: 9px; background: #2e211f; color: #ffc6bc; font-size: 12px; }
+.login-note { margin-top: 31px; padding: 17px 18px; border: 1px solid #34332f; border-radius: 12px; background: #20201e; }
+.login-note b { font-size: 12px; color: #dcc5a1; }
+.login-note p { margin: 7px 0 0; color: #908e88; font-size: 11px; line-height: 1.6; }
+@media (max-width: 880px) { .portal { grid-template-columns: 1fr; margin: 20px auto; } .intro-panel { padding: 34px 25px; } .brand { margin-bottom: 36px; } .login-panel { padding: 42px 25px; } }
+@media (max-width: 620px) { .role-grid { grid-template-columns: 1fr; } .role-card { min-height: 150px; } h1 { font-size: 38px; letter-spacing: -2px; } .portal { width: min(100% - 20px, 1180px); border-radius: 20px; } }
